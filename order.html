@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استقبال طلب من العميل</title>
+	 <link rel="stylesheet" href="new.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="brand">توصيلة</a>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="index.html#aboutus">من نحن</a>
+        <a href="index.html#contactus">تواصل معنا</a>
+    </div>
+    <div class="form-container">
+        <h2>استقبال طلبك</h2>
+        <form action="submit_request.php" method="post">
+            <div class="form-group">
+                <label for="name">الأسم :</label>
+                <input type="text" id="name" name="name"  placeholder="اكتب اسمك بالكامل" required>
+            </div>
+            <div class="form-group">
+                <label for="order">الطلب :</label>
+                <textarea id="order" name="order" placeholder="اكتب أوردرك بالتفصيل" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="city"> المدينة :</label>
+				<div class="city-group">
+				  <select id="cityCode" name="cityCode" required>
+                    <option value="الألومنيوم">الألومنيوم</option>
+                    <option value="مساكن مجلس المدينة">مساكن مجلس المدينة</option>
+                    <option value="بركة">بركة</option>
+                    <option value="المحولات">المحولات</option>
+                </select>
+                <input type="text" id="city" name="city" placeholder="اكتب عنوانك بالتفصيل" required>
+            </div>
+			 </div>
+            <div class="form-group">
+                <label for="phone">رقم الموبايل :</label>
+				  <div class="phone-group">
+                    <select id="phoneCode" name="phoneCode" required>
+					
+                        <option value="010">010 </option>
+                        <option value="011">011</option>
+                        <option value="012">012</option>
+                        <option value="015">015</option>
+                    </select>
+				<input type="text" id="phone" name="phone" placeholder="ادخل رقم هاتفك" required>
+                </div>              
+            </div>
+            <div class="form-group">
+                <button type="submit">اطـلـب الآن</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

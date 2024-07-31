@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@700&family=Tajawal:wght@400;700&display=swap");
+body {
+    font-family: "Tajawal", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+	
+	
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+	
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px
+}
+
